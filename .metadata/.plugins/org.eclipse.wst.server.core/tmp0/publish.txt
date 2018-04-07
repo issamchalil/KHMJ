@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Sun Mar 25 08:33:20 IST 2018
+org.eclipse.jst.j2ee.server\:KHMJDataLayer=WEB-INF/lib/KHMJDataLayer-0.0.1.jar
+org.eclipse.jst.j2ee.server\:KHMJClasses=WEB-INF/lib/KHMJClasses-0.0.1-SNAPSHOT.jar
