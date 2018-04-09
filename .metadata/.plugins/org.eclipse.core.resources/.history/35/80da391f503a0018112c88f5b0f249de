@@ -1,0 +1,26 @@
+import javax.ws.rs.*;
+import javax.ws.rs.Produces;
+
+
+public class MemberAPI {
+	@GET
+	@Produces(MediaType.TEXT_PLAIN)
+	public String sayPlainTextHello() {
+		return "Hello World RESTful Jersey!";
+	}
+
+	@GET
+	@Produces(MediaType.TEXT_XML)
+	public String sayXMLHello() {
+		return "<?xml version=\"1.0\"?>" + "<hello> Hello World RESTful Jersey"
+				+ "</hello>";
+	}
+
+	@GET
+	@Produces(MediaType.TEXT_HTML)
+	public String sayHtmlHello() {
+		return "<html> " + "<title>" + "Hello World RESTful Jersey"
+				+ "</title>" + "<body><h1>" + "Hello World RESTful Jersey"
+				+ "</body></h1>" + "</html> ";
+	}
+}
